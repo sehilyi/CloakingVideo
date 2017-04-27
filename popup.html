@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>CloakingVideo</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="popup.js"></script>
+  <style>
+  hl {
+    color: #f55;
+  }
+  
+  .dim {
+    color: #aaa;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  </style>
+</head>
+
+<body>
+  <h4>CloakingVideo</h4>
+  <p><small>Past the right-most part of an Youtube video URL that you want to watch subtly.</small></p>
+  <blockquote>
+    <h5>
+    <p class="dim">
+      https://www.youtube.com/watch?v=<hl>FEsFXsPCVOo</hl>
+    </p>
+    </h5>
+  </blockquote>
+  <form class="form-inline center">
+    <input id="url" class="form-control" placeholder="FEsFXsPCVOo">
+    <button id="bt" class="btn btn-primary" onclick="onVideoWatch()">Watch Video!</button>
+  </form>
+</body>
+
+</html>
