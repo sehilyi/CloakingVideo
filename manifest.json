@@ -2,15 +2,15 @@
   "manifest_version": 2,
 
   "name": "CloakingVideo",
-  "description": "....",
-  "version": "1.0",
+  "description": "Watch YouTube Videos Without Being Noticed By Nearby People!",
+  "version": "1.0.0",
+  "icons": { "128": "icon128.png" },
 
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
   "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
+    "activeTab"
   ]
 }

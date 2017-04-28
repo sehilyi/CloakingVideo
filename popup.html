@@ -3,37 +3,79 @@
 
 <head>
   <title>CloakingVideo</title>
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <script src="popup.js"></script>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
   <style>
+  body {
+    font-family: 'Open Sans', helvetica, sans-serif, arial;
+  }
+  
+  .main-panel {
+    padding: 0px 10px 0px 10px;
+  }
+  
+  .desc {
+    color: #aaa;
+    font-size: 15px;
+    font-style: italic;
+    /*font-weight: bold;*/
+  }
+  
   hl {
     color: #f55;
+    font-weight: bold;
   }
   
   .dim {
-    color: #aaa;
+    color: #999;
   }
   
   .center {
     text-align: center;
   }
+  /*  #ex {
+    background: #f5f5f5;
+    border: none;
+  }*/
+  
+  #bt {
+    margin-top: 10px;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 10px;
+  }
   </style>
 </head>
 
 <body>
-  <h4>CloakingVideo</h4>
-  <p><small>Past the right-most part of an Youtube video URL that you want to watch subtly.</small></p>
-  <blockquote>
-    <h5>
-    <p class="dim">
-      https://www.youtube.com/watch?v=<hl>FEsFXsPCVOo</hl>
+  <div class="main-panel ">
+    <h3><strong>CloakingVideo</strong></h3>
+    <p class="desc">Watch YouTube Videos Without Being Noticed By Nearby People!</p>
+    <h5><strong>HOW TO USE</strong></h5>
+    <p>
+      <ol>
+        <li><small>In YouTube.com, play any YouTube video (perhaps, a lecture video) that you <strong>pretend to watch</strong>. </small></li>
+        <li><small>Paste an URL of another YouTube video (either an entire URL or the right-most part of it) that you want to watch <strong>subtly</strong>.</small></li>
+        <li><small>Click the <strong>Watch Video!</strong> Button.</small></li>
+      </ol>
     </p>
-    </h5>
-  </blockquote>
-  <form class="form-inline center">
-    <input id="url" class="form-control" placeholder="FEsFXsPCVOo">
-    <button id="bt" class="btn btn-primary" onclick="onVideoWatch()">Watch Video!</button>
-  </form>
+    <h5>Example URL:</h5>
+    <div id='ex' class="alert alert-info" role="alert">
+      <!-- <p class="dim"> -->
+      https://www.youtube.com/watch?v=<strong>FEsFXsPCVOo</strong>
+      <!-- </p> -->
+    </div>
+    <form class="form-inline center">
+      <input id="url" class="form-control" placeholder="FEsFXsPCVOo">
+      <button id="bt" class="btn btn-primary">Watch Video!</button>
+    </form>
+  </div>
+  <p class="footer panel-footer"><small>This extension is based on <a target="_blanck" href="http://dl.acm.org/citation.cfm?doid=2984511.2984571">a research paper</a>.</small></p>
 </body>
+<script src="popup.js"></script>
 
 </html>
