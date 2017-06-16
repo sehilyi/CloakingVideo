@@ -9,6 +9,18 @@ function onVideoWatch() {
   codeStr += "  /* code that should be inserted in executeScript() */\n";
   codeStr += "  var id = 'google_companion_ad_div';\n";
   codeStr += "  var rootDiv = document.getElementById(id);\n";
+  codeStr += "\n";
+  codeStr += "  if(rootDiv == null){\n";
+  codeStr += "    var rrr = document.getElementById('watch7-sidebar-ads');\n";
+  codeStr += "\n";
+  codeStr += "    var rr = document.createElement('div');\n";
+  codeStr += "    rr.setAttribute('id', 'watch-channel-brand-div');\n";
+  codeStr += "    rrr.appendChild(rr);\n";
+  codeStr += "\n";
+  codeStr += "    rootDiv = document.createElement('div');\n";
+  codeStr += "    rootDiv.setAttribute('id', id);\n";
+  codeStr += "    rr.appendChild(rootDiv);\n";
+  codeStr += "  }\n";
   codeStr += "  \n";
   codeStr += "  var videoUrl = 'https://www.youtube.com/embed/' + '" + url + "' + '?rel=0&amp;controls=1&autoplay=1&amp;showinfo=1?ecver=1';\n";
   codeStr += "\n";

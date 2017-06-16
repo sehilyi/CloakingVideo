@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "CloakingVideo",
-  "description": "Watch YouTube Videos Without Being Noticed By Nearby People!",
-  "version": "1.0.0",
+  "name": "CloakingVideo - Watch YouTube Subtly!",
+  "description": "Watch YouTube Videos Without Being Noticed By Nearby People",
+  "version": "1.2.0",
   "icons": { "128": "icon128.png" },
 
   "browser_action": {
